@@ -4,7 +4,7 @@ import IconCheck from "./icons/IconCheck";
 const TodoItem = ({ todo, removeTodo, updateTodo }) => {
     const { id, title, completed } = todo;
     return (
-        <article className="flex gap-4 border-b-gray-400 border-b dark:bg-gray-800 ">
+        <article className="flex gap-4 border-b-gray-400 border-b">
             <button
                 className={`w-5 h-5 flex-none rounded-full border-2 ${
                     completed

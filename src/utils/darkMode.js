@@ -11,12 +11,3 @@ if (
     document.documentElement.classList.remove("dark");
     localStorage.theme = "light";
 }
-
-// When the user explicitly chooses light mode
-//localStorage.theme = "light";
-
-// When the user explicitly chooses dark mode
-//localStorage.theme = "dark";
-
-// Whenever the user explicitly chooses dark mode
-//localStorage.removeItem("theme");
