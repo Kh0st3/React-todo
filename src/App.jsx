@@ -1,3 +1,5 @@
+import { DragDropContext, Droppable, Draggable } from "@hello-pangea/dnd";
+
 import { useState, useEffect } from "react";
 import Footer from "./components/Footer";
 import Header from "./components/Headers";
@@ -79,11 +81,13 @@ const App = () => {
             <main className="container mx-auto px-4 mt-8 md:max-w-xl">
                 <TodoCreate createTodo={createTodo} />
 
-                <TodoList
-                    todos={filteredTodos()}
-                    removeTodo={removeTodo}
-                    updateTodo={updateTodo}
-                />
+                <DragDropContext>
+                    <TodoList
+                        todos={filteredTodos()}
+                        removeTodo={removeTodo}
+                        updateTodo={updateTodo}
+                    />
+                </DragDropContext>
 
                 <TodoComputed
                     computedItemsLeft={computedItemsLeft}
