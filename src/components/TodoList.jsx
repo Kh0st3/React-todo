@@ -29,7 +29,6 @@ const TodoList = ({ todos, removeTodo, updateTodo }) => {
                             )}
                         </Draggable>
                     ))}
-
                     {droppableProvided.placeholder}
                 </div>
             )}
